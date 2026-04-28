@@ -1,0 +1,49 @@
+# 🔹 Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🔹 Virtual environment
+venv/
+.env/
+.env
+
+# 🔹 VS Code settings
+.vscode/
+
+# 🔹 System files
+.DS_Store
+Thumbs.db
+
+# 🔹 Logs
+*.log
+
+# 🔹 Output files (IMPORTANT for your project)
+outputs/
+
+# 🔹 Model files (if you add later)
+*.h5
+*.pt
+*.pth
+*.ckpt
+models/
+
+# 🔹 Temporary files
+*.tmp
+*.temp
+
+# 🔹 Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# 🔹 Environment variables / secrets
+.env
+
+# 🔹 Build files
+dist/
+build/
+*.egg-info/
+
+# 🔹 Audio files (optional, if generated)
+*.wav
+*.mp3

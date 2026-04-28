@@ -1,0 +1,10 @@
+openai-whisper
+transformers
+sentencepiece
+torch
+torchaudio
+gTTS
+gradio
+sacrebleu
+soundfile
+numpy

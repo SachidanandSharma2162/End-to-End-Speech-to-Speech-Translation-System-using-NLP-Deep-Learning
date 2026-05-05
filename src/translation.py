@@ -8,6 +8,7 @@ import torch
 
 
 # Language pair → HuggingFace Helsinki-NLP model name
+
 MODEL_MAP = {
     ("en", "fr"): "Helsinki-NLP/opus-mt-en-fr",
     ("fr", "en"): "Helsinki-NLP/opus-mt-fr-en",
@@ -42,12 +43,12 @@ class Translator:
         self._cache: dict = {}   # (src, tgt) → (tokenizer, model)
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         print(self.device)
-    # ------------------------------------------------------------------
+   
     # Public API
-    # ------------------------------------------------------------------
-
+    
     def supported_pairs(self) -> list[tuple[str, str]]:
         return list(MODEL_MAP.keys())
+
 
     def translate(self, text: str, src_lang: str, tgt_lang: str) -> str:
         """
@@ -97,13 +98,13 @@ class Translator:
 
         return " ".join(translated_chunks)
 
+
     def translate_batch(self, texts: list[str], src_lang: str, tgt_lang: str) -> list[str]:
         """Translate a list of strings in one call (more efficient for many sentences)."""
         return [self.translate(t, src_lang, tgt_lang) for t in texts]
 
-    # ------------------------------------------------------------------
+    
     # Private helpers
-    # ------------------------------------------------------------------
 
     def _load(self, pair: tuple[str, str]):
         if pair not in self._cache:

@@ -1,0 +1,25 @@
+============================================================
+TRANSLATION EVALUATION REPORT
+============================================================
+
+[1] en → fr
+  Source     : The weather is really nice today.
+  Hypothesis : Le temps est vraiment beau aujourd'hui.
+  Reference  : Il fait vraiment beau aujourd'hui.
+  BLEU Score : 41.11
+
+[2] en → fr
+  Source     : I would like a glass of water please.
+  Hypothesis : Je voudrais un verre d'eau, s'il vous plaît.
+  Reference  : Je voudrais un verre d'eau s'il vous plaît.
+  BLEU Score : 65.8
+
+[3] en → de
+  Source     : Where is the nearest train station?
+  Hypothesis : Wo ist der nächste Bahnhof?
+  Reference  : Wo ist der nächste Bahnhof?
+  BLEU Score : 100.0
+
+============================================================
+
+Corpus BLEU (EN→FR): 56.21

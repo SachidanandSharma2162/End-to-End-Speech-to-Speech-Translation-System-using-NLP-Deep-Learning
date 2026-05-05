@@ -41,7 +41,7 @@ class Translator:
     def __init__(self):
         self._cache: dict = {}   # (src, tgt) → (tokenizer, model)
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-
+        print(self.device)
     # ------------------------------------------------------------------
     # Public API
     # ------------------------------------------------------------------

@@ -162,7 +162,7 @@ with gr.Blocks(title="Multilingual Speech Translator", theme=gr.themes.Soft()) a
     gr.Markdown(
         """
         ---
-        **Team project** · NLP Course · 2024  
+        **Team project** · NLP Course · 2026  
         Members: ASR (1,2) · Preprocessing (3) · Translation (4,5) · TTS (6) · UI (7) · Lead (8)
         """
     )

@@ -53,12 +53,3 @@ python pipeline.py
 ## 🔄 Workflow
 Speech → ASR → Preprocessing → Translation → TTS → Output + BLEU Score
 
-## 👥 Team
-- ASR: Member 1 & 2
-- Preprocessing: Member 3
-- Translation & Evaluation: Member 4 & 5
-- TTS: Member 6
-- UI: Member 7
-
-## 📜 License
-For academic use only.
